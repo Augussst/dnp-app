@@ -1,0 +1,101 @@
+header {
+    padding-top: 2rem;
+    /* background-color: red; */
+    padding-bottom: 5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+
+.card {
+    position: relative;
+    height: 100%;
+    background-color: white;
+    border: 0.5rem solid var(--red);
+    border-radius: 1rem;
+    padding: 1rem;
+    /* font-size: 4rem; */
+    margin-bottom: 2rem;
+}
+
+.card h2 {
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
+    color: var(--red);
+    text-shadow: 0px 0px 0 rgb(239,44,0),
+    0px 1px 0 rgb(223,28,0),
+    0px 2px 0 rgb(207,12,0),
+    0px 3px 0 rgb(191,-4,0),
+    0px 4px 0 rgb(175,-20,0),
+    0px 5px  0 rgb(159,-36,0),
+    0px 6px 5px rgba(0,0,0,0.6),
+    0px 6px 1px rgba(0,0,0,0.5),
+    0px 0px 5px rgba(0,0,0,.2);
+}
+
+.card p {
+    padding-bottom: 2rem;
+}
+
+.btn-wrp {
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.btn-wrp .btn {
+    font-size: 2rem;
+}
+
+.img-container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    justify-content: space-evenly;
+}
+
+.img-container-flex img {
+    margin: 0.5rem;
+    border: 0.5rem solid var(--blue);
+    border-radius: 1rem;
+    transition: all 200ms ease-in-out;
+}
+
+.img-container-flex img:hover {
+    box-shadow: 0 0 1rem var(--blue);
+}
+
+
+
+
+
+
+@media (min-width: 427px) {
+    .split {
+        flex-direction: row;
+        max-width: 150rem;
+    }
+
+    .split > * {
+        flex-basis: 100%;
+    }
+
+    .split > * + * {
+        margin-left: 2rem;
+    }
+
+    .btn-wrp {
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        right: 0;
+    }
+
+    .img-container-flex {
+        margin-bottom: 8rem;
+    }
+}
